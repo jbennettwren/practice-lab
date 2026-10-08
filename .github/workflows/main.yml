@@ -1,7 +1,9 @@
-name: Hello check  
-on: push
+name: test check
+on ppush
 jobs:
-  hello:
-     runs-on:  ubuntu-latest
-     steps:
-       - run: echo "hello from Joe's first check!"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      -uses: actions/checkout@v4
+      -run: pop install pytest
+      -run: pytest
