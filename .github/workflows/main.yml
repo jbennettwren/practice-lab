@@ -1,5 +1,5 @@
 name: test check
-on ppush
+on push
 jobs:
   test:
     runs-on: ubuntu-latest
